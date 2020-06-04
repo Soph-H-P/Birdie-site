@@ -1,0 +1,217 @@
+html {
+    background-color: #ffffff;
+    z-index: -3;
+    
+}
+
+* {
+margin: 0;
+padding: 0;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+font-weight: 300;
+font-size: 20px;
+
+
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em
+}
+
+main {
+   margin: 200px auto;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  background: #ffffff;
+  width: 100vw;
+  top: 0;
+  
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10%;
+  width: 100%;
+}
+
+.nav p {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: auto;
+
+  }
+  
+  .nav #logo {
+  height:100px; 
+  padding: 10px auto;
+  left: 10px;
+  top: 10px;
+  padding: 10px; 
+}
+
+.title {
+    display: inline-block;
+    padding: 10px 10px;
+    
+  }
+
+
+  a {
+      color: black;
+
+  }
+
+  a :hover {
+      color: grey;
+  }
+
+ .bird-img {
+  max-width: 50%;
+} 
+
+
+
+.birdies-container  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+
+
+  .hover-names {
+    width: 500px;
+    height: auto;
+    position: relative;
+  }
+
+  .hover-names img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+  }
+
+  .hover-names:hover img {
+    filter: blur(2px) brightness(60%);
+  }
+
+  .hover-names :not(img) {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .hover-names:hover :not(img) {
+    opacity: 1;
+
+  }
+
+  .hover-names h2 {
+    top: 50%;
+
+  }
+
+
+
+
+.banner {
+    background: white;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+#like-birdies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    background-image: url("https://odysea.gr/wp-content/uploads/2014/04/Murmuration-during-odysea-sea-kayaking-course.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    
+}
+
+#look-birdies, #visits {
+    margin: 100px auto;
+}
+
+.visiters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bird {
+    display: flex;
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: 5px;
+  }
+
+  .bird img {
+    transition: .3s;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+
+  .bird:hover img {
+    filter: blur(2px) brightness(60%);
+  }
+
+  .bird :not(img) {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .bird:hover :not(img) {
+    opacity: 1;
+
+  }
+
+  .bird h2 {
+    top: 50%;
+
+  }
